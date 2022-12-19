@@ -1,1 +1,79 @@
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #B08BC6;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #window{
+            height: 33rem;
+            width: 20rem;
+            border: .1rem solid rgb(199, 199, 199);
+            border-radius: 1rem;
+            background-color:rgb(255, 254, 238);
+            box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+        }
+        #container-image{
+            height: 30rem;
+            width: 20rem;
+            border-radius: 1rem 1rem 0px 0px;
+        }
+        #img{
+            width: 20rem;
+            height: 30rem;
+            object-fit:cover;
+            border-radius: 1rem 1rem 0px 0px;
+        }
+        #bottom-nav{
+            /* border: 2px solid red; */
+            display: flex;
+            height: 3rem;
+            justify-content: space-around;
+            margin-top: .33rem;
+        }
+        .flex-blocks{
+            width: 2.5rem;
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+        .child{
+            height: 1.4rem;
+            margin: auto;
+            display: block;
+            opacity: .65;
+        }
+        .blue-txt:hover{
+            opacity: 1;
+            color: rgb(0, 0, 255);
+        }
+        p{
+            font-size: .6rem;
+            margin-top: .1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        *{
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <div id="window">
+        <div id="container-image"><img id="img" src="2017-11-28-buy-home-main.jpg"></div>
+        <div id="bottom-nav">
+            <div class="flex-blocks" id="home"><img class="child blue-txt" src="house-chimney-solid.svg"><p class="blue-txt">Home</p></div>
+            <div class="flex-blocks" id="work"><img class="child blue-txt" src="briefcase-solid.svg"><p class="blue-txt">Work</p></div>
+            <div class="flex-blocks" id="block"><img class="child blue-txt" src="book-open-solid.svg"><p class="blue-txt">Blog</p></div>
+            <div class="flex-blocks" id="aboutus"><img class="child blue-txt" src="users-solid.svg"><p class="blue-txt">About Us</p></div>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>
